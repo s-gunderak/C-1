@@ -5,9 +5,16 @@
 
 Console.WriteLine("Введите число ");
 int N = int.Parse(Console.ReadLine());
+if (N < 0)
+{
+    Console.WriteLine("Введите число болшее либо равное 0");
+}
+else
+{
 int count = -N;
 while (count <= N)
 {
     Console.Write(count + ", ");
     count ++;
+}
 }
